@@ -42,6 +42,7 @@ public class SimpleBot {
         try {
             IDiscordClient client = builder.login(); // Builds the IDiscordClient instance and logs it in
             _client = client; // Creating the bot instance
+
         } catch (DiscordException e) { // Error occurred logging in
             System.err.println("Error occurred while logging in!");
             e.printStackTrace();

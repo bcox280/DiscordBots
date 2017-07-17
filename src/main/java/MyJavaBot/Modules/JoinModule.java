@@ -1,6 +1,5 @@
-package MyJavaBot;
+package MyJavaBot.Modules;
 
-import sx.blah.discord.api.IDiscordClient;
 import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.member.UserJoinEvent;
 import sx.blah.discord.handle.obj.IGuild;
@@ -9,7 +8,6 @@ import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.MissingPermissionsException;
 
-import java.util.LinkedList;
 import java.util.List;
 
 /**

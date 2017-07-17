@@ -1,14 +1,12 @@
-package MyJavaBot;
+package MyJavaBot.Modules;
 
-import sx.blah.discord.api.IDiscordClient;
+import MyJavaBot.Commands.*;
+import MyJavaBot.Modules.AbstractModule;
 import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.handle.obj.IChannel;
 import sx.blah.discord.handle.obj.IMessage;
-import sx.blah.discord.handle.obj.IRole;
-import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.util.DiscordException;
-import sx.blah.discord.util.MessageBuilder;
 import sx.blah.discord.util.MissingPermissionsException;
 import sx.blah.discord.util.RateLimitException;
 
@@ -26,11 +24,25 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
         try {
             // Builds (sends) and new message in the channel that the original [message was sent with the content of the original message.
 
-            if(message.getContent().startsWith(Commands.ADDROLES.toString())){
+            if(message.getContent().toLowerCase().startsWith(Commands.ADDROLES.toString())){//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
 
                 new AddRoleCommand(mEvent).execute();
 
             }
+            else if(message.getContent().toLowerCase().startsWith(Commands.CREATEROLES.toString())){
+
+                new CreateRoleCommand(mEvent).execute();
+
+            }else if(message.getContent().toLowerCase().startsWith(Commands.ROLES.toString())){
+
+                new RoleListCommand(mEvent).execute();
+
+            }else if(message.getContent().toLowerCase().startsWith(Commands.LISTCOMMANDS.toString())){
+
+                new CommandsCommand(mEvent).execute();
+
+            }
+
 
         } catch (RateLimitException e) { // RateLimitException thrown. The bot is sending messages too quickly!
             System.err.print("Sending messages too quickly!");
@@ -42,6 +54,11 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
             System.err.print("Missing permissions for channel!");
             e.printStackTrace();
         }
+
+    }
+    private void commandCheck(Commands command){
+
+
 
     }
 }

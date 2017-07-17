@@ -17,59 +17,41 @@ package MyJavaBot;
  */
 
 
-import sx.blah.discord.api.ClientBuilder;
-import sx.blah.discord.api.IDiscordClient;
+import MyJavaBot.Modules.JoinModule;
+import MyJavaBot.Modules.MessageModule;
 import sx.blah.discord.api.events.Event;
 import sx.blah.discord.api.events.EventDispatcher;
 import sx.blah.discord.api.events.IListener;
-import sx.blah.discord.handle.impl.events.guild.channel.message.MessageEvent;
-import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
-import sx.blah.discord.handle.impl.events.guild.member.UserJoinEvent;
-import sx.blah.discord.handle.obj.*;
-import sx.blah.discord.util.DiscordException;
-import sx.blah.discord.util.MessageBuilder;
-import sx.blah.discord.util.MissingPermissionsException;
-import sx.blah.discord.util.RateLimitException;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
- * An example to demonstrate event listening and message sending.
- * It will repeat everything said in a channel.
+ * A mod bot that will handle all moderation of a server
+ * Author = Blair Cox
+ * Thanks to Discord4J for the API
  */
 public class ModBot extends SimpleBot implements IListener {
 
-    protected List<IGuild> guildList = new LinkedList<>();
-    protected HashMap<IGuild, List<IRole>> roleMap = new HashMap<>();
 
     public ModBot(String token) {
         super(token);
         EventDispatcher dispatcher = _client.getDispatcher(); // Gets the client's event dispatcher
+
+        //Use the modular approach to add mods that can be added to other bots if needed, will be useful in the future
         dispatcher.registerListener(this); // Registers this bot as an event listener
-        dispatcher.registerListener(new MessageModule());
-        dispatcher.registerListener(new JoinModule());
+        dispatcher.registerListener(new MessageModule()); // Handles all message commands
+        dispatcher.registerListener(new JoinModule()); // Handles the joining of users
 
         //Create a record of the guilds and all the roles in them
-        guildList = _client.getGuilds();
-        for (int i = 0; i < guildList.size(); i++) {
 
-            roleMap.put(guildList.get(i), guildList.get(i).getRoles());
 
-        }
 
-        _client.changePlayingText("Adding Functionality");
     }
 
 
-    /**
-     * Called when the client receives a message.
-     */
+
     @Override
     public void handle(Event event) {
 
+        _client.changePlayingText("Adding Functionality");
 
     }
 }

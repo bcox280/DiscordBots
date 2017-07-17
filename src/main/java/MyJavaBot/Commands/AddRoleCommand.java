@@ -1,8 +1,6 @@
-package MyJavaBot;
+package MyJavaBot.Commands;
 
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
-import sx.blah.discord.handle.obj.IChannel;
-import sx.blah.discord.handle.obj.IMessage;
 import sx.blah.discord.handle.obj.IRole;
 import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.util.MessageBuilder;
@@ -15,6 +13,7 @@ public class AddRoleCommand extends MessageCommand{
 
 
     private boolean _addedRole = false;
+    private Commands _command = Commands.ADDROLES;
 
     public AddRoleCommand(MessageReceivedEvent mEvent){
 
@@ -64,15 +63,11 @@ public class AddRoleCommand extends MessageCommand{
         }
         if(_error){
 
-
-            new MessageBuilder(_mEvent.getClient()).appendContent("Proper Usage: !add <MentionedUser> <Role>").withChannel(_channel).build();
+                errorOccured(_command);
 
         }
 
     }
 
-    @Override
-    public void errorOccured() {
 
-    }
 }
