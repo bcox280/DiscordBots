@@ -60,7 +60,7 @@ public class ModBot extends SimpleBot implements IListener {
 
         }
 
-        _client.changePlayingText("Fixing Bugs");
+        _client.changePlayingText("Adding Functionality");
     }
 
 

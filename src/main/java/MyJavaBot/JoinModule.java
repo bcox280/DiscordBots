@@ -26,18 +26,18 @@ public class JoinModule extends AbstractModule implements IListener<UserJoinEven
 
             IUser user = event.getUser();
             IGuild guild = event.getGuild();
-            List<IRole> roleList = guild.getRoles();
+            List<IRole> roleList = guild.getRolesByName("Unassigned");
 
             for(IRole i: roleList){
 
-                if(i.getName().equalsIgnoreCase("Unassigned")){
+
 
                     user.addRole(i);
                     break;
 
                 }
 
-            }
+
 
         } catch (DiscordException e) { // DiscordException thrown. Many possibilities. Use getErrorMessage() to see what went wrong.
             System.err.print(e.getErrorMessage()); // Print the error message sent by Discord

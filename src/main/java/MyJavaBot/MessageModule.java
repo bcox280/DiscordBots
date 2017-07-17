@@ -5,6 +5,8 @@ import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.handle.obj.IChannel;
 import sx.blah.discord.handle.obj.IMessage;
+import sx.blah.discord.handle.obj.IRole;
+import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.MessageBuilder;
 import sx.blah.discord.util.MissingPermissionsException;
@@ -16,15 +18,18 @@ import sx.blah.discord.util.RateLimitException;
 public class MessageModule extends AbstractModule implements IListener<MessageReceivedEvent> {
 
     @Override
-    public void handle(MessageReceivedEvent event){
+    public void handle(MessageReceivedEvent mEvent){
 
-        MessageReceivedEvent mEvent = (MessageReceivedEvent)event;
+
         IMessage message = mEvent.getMessage(); // Gets the message from the event object NOTE: This is not the content of the message, but the object itself
         IChannel channel = message.getChannel(); // Gets the channel in which this message was sent.
         try {
-            // Builds (sends) and new message in the channel that the original message was sent with the content of the original message.
-            if(message.getContent().startsWith("!work")){
-               new MessageBuilder(event.getClient()).appendContent("IM ALIVE!!!!").withChannel(channel).build();
+            // Builds (sends) and new message in the channel that the original [message was sent with the content of the original message.
+
+            if(message.getContent().startsWith(Commands.ADDROLES.toString())){
+
+                new AddRoleCommand(mEvent).execute();
+
             }
 
         } catch (RateLimitException e) { // RateLimitException thrown. The bot is sending messages too quickly!

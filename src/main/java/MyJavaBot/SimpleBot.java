@@ -30,9 +30,7 @@ public class SimpleBot {
 
     public IDiscordClient _client; // The instance of the discord client.
 
-    /**
-     * A custom login() method to handle all of the possible exceptions and set the bot instance.
-     */
+
     public SimpleBot(String token) {
         if (token.length() < 1) { // Needs a bot token provided
             throw new IllegalArgumentException("This bot needs at least 1 argument!");
