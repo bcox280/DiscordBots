@@ -41,6 +41,10 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
 
                 new CommandsCommand(mEvent).execute();
 
+            }else if(message.getContent().toLowerCase().startsWith(Commands.DEFINE.toString())){
+
+                new DefineCommand(mEvent).execute();
+
             }
 
 

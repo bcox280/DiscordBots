@@ -2,35 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aed0ac0-0e6d-4e3f-843f-2fdeede21dce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/AnnotationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/ParrotBot.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/SimpleCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/AbstractModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/AddRoleCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/AnnotationListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/BaseCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/Commands.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/JoinModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/MessageCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/MessageModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/ParrotBot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/SimpleCommand.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/AbstractModule.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/AbstractModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/AddRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/AddRoleCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/BaseCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/JoinModule.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/JoinModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/MessageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/MessageCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/MessageModule.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/ModBot.class" afterPath="$PROJECT_DIR$/target/classes/MyJavaBot/ModBot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/SimpleBot.class" afterPath="$PROJECT_DIR$/target/classes/MyJavaBot/SimpleBot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_extjwnl_extjwnl_1_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_extjwnl_extjwnl_data_wn31_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/TargetedCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/Commands/Commands.class" afterPath="$PROJECT_DIR$/target/classes/MyJavaBot/Commands/Commands.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MyJavaBot/Modules/MessageModule.class" afterPath="$PROJECT_DIR$/target/classes/MyJavaBot/Modules/MessageModule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/SimpleBot.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/SimpleBot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discordbot.iml" afterPath="$PROJECT_DIR$/discordbot.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,18 +32,18 @@
       <file leaf-file-name="ModBot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="569">
               <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleListCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoleListCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="102" lean-forward="true" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+            <state relative-caret-position="323">
+              <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -67,8 +52,8 @@
       <file leaf-file-name="MessageModule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="595">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,14 +61,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandsCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="731">
+              <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefineCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TargetedCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/TargetedCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="78" lean-forward="false" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandsCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,18 +128,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateRoleCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -134,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/main/java/CreateClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/CreateClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/CreateBot.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/SimpleCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/AnnotationListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/ParrotBot.java" />
@@ -149,8 +171,12 @@
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/BaseCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/AddRoleCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/MessageCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/TargetedCommand.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java" />
       </list>
     </option>
   </component>
@@ -183,7 +209,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -319,8 +344,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="discordbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="discordbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -591,8 +631,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -604,7 +643,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2388974" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2388974" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2388974" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -628,7 +667,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -636,22 +677,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/MessageModule.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/BaseCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/MessageCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/AddRoleCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,6 +690,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,6 +713,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,6 +721,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,6 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,6 +762,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -730,18 +772,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/CreateBot.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/AnnotationListener.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/ParrotBot.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -772,6 +807,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -788,34 +826,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/BaseCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/AddRoleCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/MessageCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/MessageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -826,19 +836,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="374">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/ModBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="78" lean-forward="false" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="102" lean-forward="true" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+        <state relative-caret-position="323">
+          <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/MessageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/TargetedCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
