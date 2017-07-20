@@ -9,7 +9,7 @@ package MyJavaBot.Commands;
 public enum Commands {
     ROLES("roles","!roles <MentionedUser> or !roles", "Lists Roles for a Server or a User"),
     ADDROLES("add","!add <MentionedUser> <Role>", "Adds a Mentioned User to a Role"),
-    CREATEROLES("createrole", "!createRole <RoleName>", "Creates a new Role"),
+    CREATEROLES("createrole", "!createRole <Color> <RoleName> <Admin?>", "Creates a new Role"),
     DEFINE("define", "!define <Word>", "Defines a Given Word"),
     LISTCOMMANDS("commands", "!commands", "Lists all Commands");
 

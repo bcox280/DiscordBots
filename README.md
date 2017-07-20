@@ -7,7 +7,7 @@ The current goal is to make a working moderator bot for my discord channels for 
 use on their servers as well.
 
 Current Goals
-1. Role Setup, adding, removal(In Progress)
+1. Role Setup, adding, removal(In Progress)(Will add more in depth permissions later)
 2. Ban, unban, warning features
 3. Features to stop spam, filters for channels 
 4. Autoinvite
