@@ -29,6 +29,7 @@ public class CreateRoleCommand extends TargetedCommand{
     public void parseTarget(String[] target) {
 
         int size = target.length;
+
         Color color;
         switch(size){
             case 3:
@@ -41,6 +42,7 @@ public class CreateRoleCommand extends TargetedCommand{
                     role.changeName(target[2]);
                     EnumSet<Permissions> perm = EnumSet.of(Permissions.READ_MESSAGES, Permissions.SEND_MESSAGES, Permissions.READ_MESSAGE_HISTORY, Permissions.ADD_REACTIONS);
                     role.changePermissions(perm);
+                    new MessageBuilder(_mEvent.getClient()).appendContent("New Role " + target[2] + " Added" ).withChannel(_channel).build();
                 } catch (Exception e) {
                     color = null; // Not defined
                     _error = true ;
@@ -68,6 +70,7 @@ public class CreateRoleCommand extends TargetedCommand{
 
                     }
                     role2.changePermissions(perm);
+                    new MessageBuilder(_mEvent.getClient()).appendContent("New Role " + target[2] + " Added" ).withChannel(_channel).build();
                 } catch (Exception e) {
                     color = null; // Not defined
                     _error = true ;
@@ -81,8 +84,9 @@ public class CreateRoleCommand extends TargetedCommand{
                 _error = true;
                 break;
         }
-
-        errorOccured(Commands.CREATEROLES);
+        if(_error) {
+            errorOccured(Commands.CREATEROLES);
+        }
 
     }
 }

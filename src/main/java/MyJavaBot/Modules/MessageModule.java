@@ -45,6 +45,18 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
 
                 new DefineCommand(mEvent).execute();
 
+            }else if(message.getContent().toLowerCase().startsWith(Commands.DELROLE.toString())){
+
+                new DelRoleCommand(mEvent).execute();
+
+            }else if(message.getContent().toLowerCase().startsWith(Commands.ROULETTE.toString())){
+
+                new RouletteCommand(mEvent).execute();
+
+            }else if(message.getContent().toLowerCase().startsWith(Commands.D20.toString())){
+
+                new D20Command(mEvent).execute();
+
             }
 
 

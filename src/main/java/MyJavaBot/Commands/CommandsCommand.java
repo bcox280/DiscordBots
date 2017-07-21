@@ -17,12 +17,14 @@ public class CommandsCommand extends MessageCommand {
     @Override
     public void execute() {
 
+        String commandString = "";
         if(_mEvent.getMessage().getContent().length() == 9) {
             for (Commands com : Commands.values()) {
 
-                new MessageBuilder(_mEvent.getClient()).appendContent(com.usage() + "\t" + com.description()).withChannel(_channel).build();
+                commandString += com.usage() + ":\t" + com.description() + "\n";
 
             }
+            new MessageBuilder(_mEvent.getClient()).appendContent(commandString).withChannel(_channel).build();
         }else{
             errorOccured(Commands.LISTCOMMANDS);
         }

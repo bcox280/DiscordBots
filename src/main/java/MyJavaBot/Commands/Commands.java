@@ -11,6 +11,11 @@ public enum Commands {
     ADDROLES("add","!add <MentionedUser> <Role>", "Adds a Mentioned User to a Role"),
     CREATEROLES("createrole", "!createRole <Color> <RoleName> <Admin?>", "Creates a new Role"),
     DEFINE("define", "!define <Word>", "Defines a Given Word"),
+    DELROLE("delrole", "!delRole <RoleName>", "Deletes a given role"),
+    CHANGEPERMISSIONS("chgperm", "!chgPerm <User> <Perm> or !ChgPerm <Role> <Perm>", "Changes permissions for a given role or user"), //TODO
+    ROULETTE("roulette", "!roulette <User>  or !roulette", "Russian Roulette on yourself or another user"),
+    //Fun Commands
+    D20("d20", "!d20", "Rolls a d20"),
     LISTCOMMANDS("commands", "!commands", "Lists all Commands");
 
     private String commandName;
