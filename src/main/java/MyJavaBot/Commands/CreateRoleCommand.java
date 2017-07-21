@@ -19,6 +19,7 @@ import java.util.Set;
  */
 public class CreateRoleCommand extends TargetedCommand{
 
+    public static Commands cmd = Commands.CREATEROLES;
     public CreateRoleCommand(MessageReceivedEvent mEvent){
 
         super(mEvent);

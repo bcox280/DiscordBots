@@ -8,7 +8,7 @@ import sx.blah.discord.util.MessageBuilder;
  */
 public class CommandsCommand extends MessageCommand {
 
-
+    public static Commands cmd = Commands.LISTCOMMANDS;
     public CommandsCommand(MessageReceivedEvent mEvent){
 
         super(mEvent);

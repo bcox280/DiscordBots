@@ -7,6 +7,7 @@ import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedE
  */
 public class BanCommand extends TargetedCommand {
 
+
     public BanCommand(MessageReceivedEvent mEvent) {
         super(mEvent);
     }

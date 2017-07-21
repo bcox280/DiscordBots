@@ -10,6 +10,11 @@ import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.MissingPermissionsException;
 import sx.blah.discord.util.RateLimitException;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created by Blair on 12/07/2017.
  */
@@ -24,39 +29,44 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
         try {
             // Builds (sends) and new message in the channel that the original [message was sent with the content of the original message.
 
-            if(message.getContent().toLowerCase().startsWith(Commands.ADDROLES.toString())){//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
+            String msg = (message.getContent().toLowerCase());
+            BaseCommand cmd = null;
+            if(msg.startsWith(Commands.ADDROLES.toString())){//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
 
-                new AddRoleCommand(mEvent).execute();
+                cmd = new AddRoleCommand(mEvent);
 
             }
-            else if(message.getContent().toLowerCase().startsWith(Commands.CREATEROLES.toString())){
+            else if(msg.startsWith(Commands.CREATEROLES.toString())){
 
-                new CreateRoleCommand(mEvent).execute();
+                cmd = new CreateRoleCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.ROLES.toString())){
+            }else if(msg.startsWith(Commands.ROLES.toString())){
 
-                new RoleListCommand(mEvent).execute();
+                cmd = new RoleListCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.LISTCOMMANDS.toString())){
+            }else if(msg.startsWith(Commands.LISTCOMMANDS.toString())){
 
-                new CommandsCommand(mEvent).execute();
+                cmd = new CommandsCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.DEFINE.toString())){
+            }else if(msg.startsWith(Commands.DEFINE.toString())){
 
-                new DefineCommand(mEvent).execute();
+                cmd = new DefineCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.DELROLE.toString())){
+            }else if(msg.startsWith(Commands.DELROLE.toString())){
 
-                new DelRoleCommand(mEvent).execute();
+                cmd = new DelRoleCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.ROULETTE.toString())){
+            }else if(msg.startsWith(Commands.ROULETTE.toString())){
 
-                new RouletteCommand(mEvent).execute();
+                cmd = new RouletteCommand(mEvent);
 
-            }else if(message.getContent().toLowerCase().startsWith(Commands.D20.toString())){
+            }else if(msg.startsWith(Commands.D20.toString())){
 
-                new D20Command(mEvent).execute();
+                cmd = new D20Command(mEvent);
 
+            }
+            if(cmd != null) {
+                cmd.execute();
             }
 
 
@@ -70,7 +80,6 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
             System.err.print("Missing permissions for channel!");
             e.printStackTrace();
         }
-
     }
     private void commandCheck(Commands command){
 

@@ -10,8 +10,12 @@ import java.util.Random;
  */
 public class RouletteCommand extends TargetedCommand {
 
+    public static Commands cmd = Commands.ROULETTE;
+
     public RouletteCommand(MessageReceivedEvent mEvent) {
+
         super(mEvent);
+
     }
 
     @Override

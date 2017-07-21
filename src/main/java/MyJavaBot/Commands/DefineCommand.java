@@ -13,6 +13,8 @@ import java.io.File;
  */
 public class DefineCommand extends MessageCommand {
 
+    public static Commands cmd = Commands.DEFINE;
+
     public DefineCommand(MessageReceivedEvent mEvent){
 
         super(mEvent);

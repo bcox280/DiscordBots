@@ -11,7 +11,7 @@ import sx.blah.discord.util.MessageBuilder;
 public class AddRoleCommand extends MessageCommand{
 
 
-
+    public static Commands cmd = Commands.ADDROLES;
     private boolean _addedRole = false;
     private Commands _command = Commands.ADDROLES;
 

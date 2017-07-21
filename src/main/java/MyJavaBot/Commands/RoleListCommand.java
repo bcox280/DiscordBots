@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class RoleListCommand extends MessageCommand{
 
+    public static Commands cmd = Commands.ROLES;
     public RoleListCommand(MessageReceivedEvent mEvent){
 
         super(mEvent);//Call Parent Constructor
