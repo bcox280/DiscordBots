@@ -7,15 +7,19 @@ package MyJavaBot.Commands;
  * listing all commands
  */
 public enum Commands {
+    //Roles
     ROLES("roles","!roles <MentionedUser> or !roles", "Lists Roles for a Server or a User"),
     ADDROLES("add","!add <MentionedUser> <Role>", "Adds a Mentioned User to a Role"),
     CREATEROLES("createrole", "!createRole <Color> <RoleName> <Admin?>", "Creates a new Role"),
     DEFINE("define", "!define <Word>", "Defines a Given Word"),
     DELROLE("delrole", "!delRole <RoleName>", "Deletes a given role"),
     CHANGEPERMISSIONS("chgperm", "!chgPerm <User> <Perm> or !ChgPerm <Role> <Perm>", "Changes permissions for a given role or user"), //TODO
-    ROULETTE("roulette", "!roulette <User>  or !roulette", "Russian Roulette on yourself or another user"),
+    //Banning
+    BAN("ban","!ban <User> <Reason>","Bans a user for a reason"),
     //Fun Commands
+    ROULETTE("roulette", "!roulette <User>  or !roulette", "Russian Roulette on yourself or another user"),
     D20("d20", "!d20", "Rolls a d20"),
+    //Main
     LISTCOMMANDS("commands", "!commands", "Lists all Commands");
 
     private String commandName;

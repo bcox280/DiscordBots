@@ -6,6 +6,7 @@ import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.handle.obj.IChannel;
 import sx.blah.discord.handle.obj.IMessage;
+import sx.blah.discord.handle.obj.IRole;
 import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.MissingPermissionsException;
 import sx.blah.discord.util.RateLimitException;
@@ -20,55 +21,35 @@ import java.util.Set;
  */
 public class MessageModule extends AbstractModule implements IListener<MessageReceivedEvent> {
 
+
+    private MessageReceivedEvent _mEvent;
+
     @Override
-    public void handle(MessageReceivedEvent mEvent){
+    public void handle(MessageReceivedEvent mEvent) {
 
-
+        boolean admin = false;
+        _mEvent = mEvent;
         IMessage message = mEvent.getMessage(); // Gets the message from the event object NOTE: This is not the content of the message, but the object itself
         IChannel channel = message.getChannel(); // Gets the channel in which this message was sent.
         try {
-            // Builds (sends) and new message in the channel that the original [message was sent with the content of the original message.
 
             String msg = (message.getContent().toLowerCase());
-            BaseCommand cmd = null;
-            if(msg.startsWith(Commands.ADDROLES.toString())){//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
 
-                cmd = new AddRoleCommand(mEvent);
+            for(IRole iR: message.getAuthor().getRolesForGuild(message.getGuild())) {
 
+                if (iR.getName().toLowerCase().equals("admin")) {
+
+                    admin = true;
+
+                }
             }
-            else if(msg.startsWith(Commands.CREATEROLES.toString())){
-
-                cmd = new CreateRoleCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.ROLES.toString())){
-
-                cmd = new RoleListCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.LISTCOMMANDS.toString())){
-
-                cmd = new CommandsCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.DEFINE.toString())){
-
-                cmd = new DefineCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.DELROLE.toString())){
-
-                cmd = new DelRoleCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.ROULETTE.toString())){
-
-                cmd = new RouletteCommand(mEvent);
-
-            }else if(msg.startsWith(Commands.D20.toString())){
-
-                cmd = new D20Command(mEvent);
-
+            if(admin) {
+                adminCommands(msg);
             }
-            if(cmd != null) {
-                cmd.execute();
-            }
+            admin = false;
 
+
+            userCommands(msg);
 
         } catch (RateLimitException e) { // RateLimitException thrown. The bot is sending messages too quickly!
             System.err.print("Sending messages too quickly!");
@@ -81,9 +62,66 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
             e.printStackTrace();
         }
     }
-    private void commandCheck(Commands command){
 
+    private void commandCheck(Commands command) {
 
 
     }
-}
+
+    private void adminCommands(String msg) {
+        BaseCommand cmd = null;
+        if (msg.startsWith(Commands.ADDROLES.toString())) {//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
+
+            cmd = new AddRoleCommand(_mEvent);
+
+        } else if (msg.startsWith(Commands.CREATEROLES.toString())) {
+
+            cmd = new CreateRoleCommand(_mEvent);
+
+        }else if (msg.startsWith(Commands.DELROLE.toString())) {
+
+            cmd = new DelRoleCommand(_mEvent);
+
+        }
+        if (cmd != null) {
+            cmd.execute();
+        }
+
+    }
+
+    private void userCommands(String msg) {
+
+        BaseCommand cmd = null;
+        if (msg.startsWith(Commands.LISTCOMMANDS.toString())) {
+
+            cmd = new CommandsCommand(_mEvent);
+
+        } else if (msg.startsWith(Commands.DEFINE.toString())) {
+
+            cmd = new DefineCommand(_mEvent);
+
+        }else if (msg.startsWith(Commands.ROULETTE.toString())) {
+
+                cmd = new RouletteCommand(_mEvent);
+
+        } else if (msg.startsWith(Commands.D20.toString())) {
+
+                cmd = new D20Command(_mEvent);
+
+        } else if (msg.startsWith(Commands.BAN.toString())) {
+
+                cmd = new BanCommand(_mEvent);
+
+        } else if (msg.startsWith(Commands.ROLES.toString())) {
+
+            cmd = new RoleListCommand(_mEvent);
+
+
+        }
+        if (cmd != null) {
+            cmd.execute();
+        }
+
+        }
+    }
+

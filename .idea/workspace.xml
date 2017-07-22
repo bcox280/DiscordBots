@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aed0ac0-0e6d-4e3f-843f-2fdeede21dce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/AddRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/AddRoleCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/D20Command.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/D20Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DelRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DelRoleCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RouletteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RouletteCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" afterPath="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,8 +21,20 @@
       <file leaf-file-name="MessageModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="1000">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BanCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +45,8 @@
       <file leaf-file-name="Commands.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="595">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,10 +93,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/MessageCommand.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/D20Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/TargetedCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BaseCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/DefineCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CreateRoleCommand.java" />
@@ -102,6 +103,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/CommandsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/RoleListCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/AddRoleCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java" />
       </list>
     </option>
@@ -558,6 +561,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -731,15 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,16 +840,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/Commands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="595">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Commands/BanCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJavaBot/Modules/MessageModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="1000">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
