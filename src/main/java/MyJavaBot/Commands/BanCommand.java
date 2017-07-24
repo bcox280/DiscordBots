@@ -23,6 +23,7 @@ public class BanCommand extends TargetedCommand {
 
 
 
+            _message.getGuild().banUser(userBan.get(0));
 
         }
 
