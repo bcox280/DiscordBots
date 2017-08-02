@@ -22,6 +22,7 @@ import MyJavaBot.Modules.MessageModule;
 import sx.blah.discord.api.events.Event;
 import sx.blah.discord.api.events.EventDispatcher;
 import sx.blah.discord.api.events.IListener;
+import sx.blah.discord.handle.obj.IPrivateChannel;
 
 /**
  * A mod bot that will handle all moderation of a server
@@ -50,6 +51,8 @@ public class ModBot extends SimpleBot implements IListener {
 
     @Override
     public void handle(Event event) {
+
+
 
         _client.changePlayingText("Adding Functionality");
 

@@ -27,6 +27,7 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
     @Override
     public void handle(MessageReceivedEvent mEvent) {
 
+
         boolean admin = false;
         _mEvent = mEvent;
         IMessage message = mEvent.getMessage(); // Gets the message from the event object NOTE: This is not the content of the message, but the object itself

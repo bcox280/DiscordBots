@@ -1,6 +1,7 @@
 package MyJavaBot.Commands;
 
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
+import sx.blah.discord.handle.obj.IPrivateChannel;
 import sx.blah.discord.util.MessageBuilder;
 
 /**
@@ -19,12 +20,14 @@ public class CommandsCommand extends MessageCommand {
 
         String commandString = "";
         if(_mEvent.getMessage().getContent().length() == 9) {
+
             for (Commands com : Commands.values()) {
 
                 commandString += com.usage() + ":\t" + com.description() + "\n";
 
             }
-            new MessageBuilder(_mEvent.getClient()).appendContent(commandString).withChannel(_channel).build();
+            IPrivateChannel pChannel = _mEvent.getClient().getOrCreatePMChannel(_mEvent.getAuthor());
+            pChannel.sendMessage(commandString);
         }else{
             errorOccured(Commands.LISTCOMMANDS);
         }
