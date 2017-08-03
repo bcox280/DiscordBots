@@ -35,6 +35,6 @@
     <root level="debug">
         <appender-ref ref="CONSOLE"/>
         <!-- Uncomment the next line to also log to a file -->
-        <!-- <appender-ref ref="ASYNC"/> -->
+        <appender-ref ref="ASYNC"/> -->
     </root>
 </configuration>
