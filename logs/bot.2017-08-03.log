@@ -1,0 +1,19 @@
+2017-08-03 14:41:58.977 [main] INFO  org.eclipse.jetty.util.log               : Logging initialized @811ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-08-03 14:41:58.988 [main] INFO  sx.blah.discord.Discord4J                : Discord4J v2.8.4 (f9695fb09ff01242b02b9641d0b655311af4b558-f9695fb) (https://github.com/austinv11/Discord4J)
+2017-08-03 14:41:58.989 [main] INFO  sx.blah.discord.Discord4J                : A Java binding for the official Discord API, forked from the inactive https://github.com/nerd/Discord4J. Copyright (c) 2017, Licensed under GNU LGPLv3
+2017-08-03 14:42:00.637 [main] DEBUG sx.blah.discord.Discord4J                : Obtained gateway wss://gateway.discord.gg?encoding=json&v=5.
+2017-08-03 14:42:01.627 [HttpClient@381198937-23] INFO  sx.blah.discord.Discord4J                : Websocket Connected.
+2017-08-03 14:42:01.998 [Dispatch Handler] INFO  sx.blah.discord.Discord4J                : Connected to Discord Gateway v5. Receiving 2 guilds.
+2017-08-03 14:42:02.105 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "FidgetDevServer" with ID 324809680440262667 on shard 0.
+2017-08-03 14:42:02.106 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "Bot Army" with ID 113823704999395333 on shard 0.
+2017-08-03 14:45:47.035 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J                : User "Utilibot" changed presence to ONLINE - playing for 2d6h30m26s!
+2017-08-03 14:46:53.150 [Thread-12] INFO  sx.blah.discord.Discord4J                : Shard 0 websocket disconnected with status code 1001 and reason "Shutdown".
+2017-08-03 15:04:57.158 [main] INFO  org.eclipse.jetty.util.log               : Logging initialized @655ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-08-03 15:04:57.167 [main] INFO  sx.blah.discord.Discord4J                : Discord4J v2.8.4 (f9695fb09ff01242b02b9641d0b655311af4b558-f9695fb) (https://github.com/austinv11/Discord4J)
+2017-08-03 15:04:57.167 [main] INFO  sx.blah.discord.Discord4J                : A Java binding for the official Discord API, forked from the inactive https://github.com/nerd/Discord4J. Copyright (c) 2017, Licensed under GNU LGPLv3
+2017-08-03 15:04:58.630 [main] DEBUG sx.blah.discord.Discord4J                : Obtained gateway wss://gateway.discord.gg?encoding=json&v=5.
+2017-08-03 15:04:59.568 [HttpClient@245703741-23] INFO  sx.blah.discord.Discord4J                : Websocket Connected.
+2017-08-03 15:04:59.948 [Dispatch Handler] INFO  sx.blah.discord.Discord4J                : Connected to Discord Gateway v5. Receiving 2 guilds.
+2017-08-03 15:05:00.057 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "Bot Army" with ID 113823704999395333 on shard 0.
+2017-08-03 15:05:00.059 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "FidgetDevServer" with ID 324809680440262667 on shard 0.
+2017-08-03 15:06:52.209 [Thread-12] INFO  sx.blah.discord.Discord4J                : Shard 0 websocket disconnected with status code 1001 and reason "Shutdown".
