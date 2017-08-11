@@ -19,3 +19,4 @@ Current Goals
 10. Input a Dictionary api to help define words without searching online (as well as ud)  (In Progress)
 11. Twitter API to send out tweets
 12. Social media setup, dont know what yet
+13. Audio capabilities, send back saved sounds, flood channels with noise.
