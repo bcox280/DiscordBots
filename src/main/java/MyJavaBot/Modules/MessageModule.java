@@ -1,7 +1,7 @@
 package MyJavaBot.Modules;
 
 import MyJavaBot.Commands.*;
-import MyJavaBot.Modules.AbstractModule;
+import MyJavaBot.Commands.MessageCommand.*;
 import sx.blah.discord.api.events.IListener;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.handle.obj.IChannel;
@@ -10,12 +10,6 @@ import sx.blah.discord.handle.obj.IRole;
 import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.MissingPermissionsException;
 import sx.blah.discord.util.RateLimitException;
-
-import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Blair on 12/07/2017.
@@ -79,6 +73,7 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
         } else if (msg.startsWith(Commands.CREATEROLES.toString())) {
 
             cmd = new CreateRoleCommand(_mEvent);
+
 
         }else if (msg.startsWith(Commands.DELROLE.toString())) {
 

@@ -6,7 +6,8 @@ import sx.blah.discord.api.events.Event;
  * Created by Blair on 17/07/2017.
  */
 public abstract class BaseCommand {
-    public static  Commands cmd;
+    public static  Commands _cmd;
+    public static boolean _admin = false;
     protected Event _event;
     protected boolean _error = false;
 
