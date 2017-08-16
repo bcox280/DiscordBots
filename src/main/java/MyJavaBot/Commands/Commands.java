@@ -19,6 +19,8 @@ public enum Commands {
     //Fun Commands
     ROULETTE("roulette", "!roulette <User>  or !roulette", "Russian Roulette on yourself or another user"),
     D20("d20", "!d20", "Rolls a d20"),
+    JOIN("join", "!join", "Joins the channel a user is in"),
+    FLIP("flip", "!flip", "Flips a coin"),
     //Main
     LISTCOMMANDS("commands", "!commands", "Lists all Commands");
 

@@ -19,6 +19,7 @@ package MyJavaBot;
 
 import MyJavaBot.Modules.JoinModule;
 import MyJavaBot.Modules.MessageModule;
+import MyJavaBot.Modules.VoiceModule;
 import sx.blah.discord.api.events.Event;
 import sx.blah.discord.api.events.EventDispatcher;
 import sx.blah.discord.api.events.IListener;
@@ -40,7 +41,7 @@ public class ModBot extends SimpleBot implements IListener {
         dispatcher.registerListener(this); // Registers this bot as an event listener
         dispatcher.registerListener(new MessageModule()); // Handles all message commands
         dispatcher.registerListener(new JoinModule()); // Handles the joining of users
-
+        dispatcher.registerListener(new VoiceModule());
         //Create a record of the guilds and all the roles in them
 
 

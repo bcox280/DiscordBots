@@ -75,7 +75,13 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
             cmd = new CreateRoleCommand(_mEvent);
 
 
-        }else if (msg.startsWith(Commands.DELROLE.toString())) {
+        }else if (msg.startsWith(Commands.JOIN.toString())) {
+
+            cmd = new TestCommand(_mEvent);
+
+
+        }
+        else if (msg.startsWith(Commands.DELROLE.toString())) {
 
             cmd = new DelRoleCommand(_mEvent);
 
@@ -112,6 +118,11 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
         } else if (msg.startsWith(Commands.ROLES.toString())) {
 
             cmd = new RoleListCommand(_mEvent);
+
+
+        }else if (msg.startsWith(Commands.FLIP.toString())) {
+
+            cmd = new CoinCommand(_mEvent);
 
 
         }
