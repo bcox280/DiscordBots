@@ -13,9 +13,8 @@ public class RouletteCommand extends TargetedCommand {
 
     public static Commands cmd = Commands.ROULETTE;
 
-    public RouletteCommand(MessageReceivedEvent mEvent) {
+    public RouletteCommand() {
 
-        super(mEvent);
 
     }
 

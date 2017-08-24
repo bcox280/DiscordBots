@@ -16,12 +16,11 @@ import java.util.List;
 public class RoleListCommand extends MessageCommand{
 
     public static Commands cmd = Commands.ROLES;
-    public RoleListCommand(MessageReceivedEvent mEvent){
+    public RoleListCommand(){
 
-        super(mEvent);//Call Parent Constructor
     }
 
-    @Override
+
     public void execute() {
 
 

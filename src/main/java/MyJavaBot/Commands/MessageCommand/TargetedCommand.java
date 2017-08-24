@@ -7,13 +7,13 @@ import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedE
  */
 public abstract class TargetedCommand extends MessageCommand{
 
-    public TargetedCommand(MessageReceivedEvent mEvent){
+    public TargetedCommand(){
 
-        super(mEvent);
+
 
     }
 
-    @Override
+
     public final void execute() {
 
         String content = _message.getContent();

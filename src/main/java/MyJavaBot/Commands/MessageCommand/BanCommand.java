@@ -11,8 +11,7 @@ import java.util.List;
 public class BanCommand extends TargetedCommand {
 
 
-    public BanCommand(MessageReceivedEvent mEvent) {
-        super(mEvent);
+    public BanCommand(){
     }
 
     @Override

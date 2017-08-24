@@ -16,13 +16,11 @@ public class AudioCommand extends BaseCommand {
 
     UserSpeakingEvent _uevent;
 
-    public AudioCommand( UserSpeakingEvent event){
+    public AudioCommand( ){
 
 
-        super(event);
-        _uevent = event;
     }
-    @Override
+
     public void execute() {
 
 

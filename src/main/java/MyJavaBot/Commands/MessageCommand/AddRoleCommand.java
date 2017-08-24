@@ -16,13 +16,12 @@ public class AddRoleCommand extends MessageCommand{
     private boolean _addedRole = false;
     private Commands _command = Commands.ADDROLES;
 
-    public AddRoleCommand(MessageReceivedEvent mEvent){
+    public AddRoleCommand(){
 
-        super(mEvent);
 
     }
 
-    @Override
+
     public void execute() {
 
         if (_message.getMentions().size() >  0){

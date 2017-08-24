@@ -14,13 +14,13 @@ public class DefineCommand extends MessageCommand {
 
     public static Commands cmd = Commands.DEFINE;
 
-    public DefineCommand(MessageReceivedEvent mEvent){
+    public DefineCommand(){
 
-        super(mEvent);
+
 
     }
 
-    @Override
+
     public void execute() {
 
 

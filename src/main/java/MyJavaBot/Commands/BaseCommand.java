@@ -12,13 +12,11 @@ public abstract class BaseCommand {
     protected boolean _error = false;
 
 
-    public BaseCommand(Event event){
+    public BaseCommand(){
 
 
-        _event = event;
 
     }
-    public abstract void execute();
     public abstract void errorOccured(Commands command);
 
 

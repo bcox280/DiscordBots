@@ -13,14 +13,14 @@ import static jdk.nashorn.internal.objects.NativeArray.join;
 
 public class TestCommand extends MessageCommand{
 
-    public TestCommand(MessageReceivedEvent mEvent) {
-        super(mEvent);
+    public TestCommand() {
+
     }
 
     IMessage message = _mEvent.getMessage();
     IUser user = message.getAuthor();
     IGuild guild = message.getGuild();
-    @Override
+
     public void execute() {
 
         if (user.getVoiceStateForGuild(guild).getChannel() != null ){

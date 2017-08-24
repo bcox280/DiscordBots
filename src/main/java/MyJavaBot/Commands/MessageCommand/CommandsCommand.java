@@ -10,9 +10,9 @@ import sx.blah.discord.handle.obj.IPrivateChannel;
 public class CommandsCommand extends MessageCommand {
 
     public static Commands cmd = Commands.LISTCOMMANDS;
-    public CommandsCommand(MessageReceivedEvent mEvent){
+    public CommandsCommand(){
 
-        super(mEvent);
+
 
     }
     @Override

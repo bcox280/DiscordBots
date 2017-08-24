@@ -12,13 +12,12 @@ public class D20Command extends MessageCommand {
 
     protected static final Commands cmd = Commands.D20;
 
-    public D20Command(MessageReceivedEvent mEvent) {
+    public D20Command() {
 
-        super(mEvent);
+
 
     }
 
-    @Override
     public void execute() {
 
             if(_message.getContent().length() == 4){

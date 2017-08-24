@@ -9,7 +9,7 @@ public class VoiceModule extends AbstractModule implements IListener<UserSpeakin
     @Override
     public void handle(UserSpeakingEvent usEvent) {
 
-        AudioCommand cmd = new AudioCommand(usEvent);
+        AudioCommand cmd = new AudioCommand();
         cmd.execute();
 
     }

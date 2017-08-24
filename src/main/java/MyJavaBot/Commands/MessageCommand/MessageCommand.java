@@ -16,15 +16,22 @@ public abstract class MessageCommand extends BaseCommand {
     protected IChannel _channel;
     protected MessageReceivedEvent _mEvent;
 
-    public MessageCommand(MessageReceivedEvent mEvent){
+    public MessageCommand(){
 
-        super(mEvent);
+
+
+    }
+
+    public abstract void execute();
+
+    public void setUp(MessageReceivedEvent mEvent){
+
         _mEvent = mEvent;
         _message = mEvent.getMessage();
         _channel = mEvent.getChannel();
 
-    }
 
+    }
     public void errorOccured(Commands command) {
 
         new MessageBuilder(_mEvent.getClient()).appendContent("Proper Usage: " + command.usage()).withChannel(_channel).build();

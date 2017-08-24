@@ -7,8 +7,10 @@ import java.util.Random;
 
 public class CoinCommand extends MessageCommand{
 
-    public CoinCommand(MessageReceivedEvent mEvent) {
-        super(mEvent);
+    public CoinCommand() {
+
+
+
     }
 
     @Override

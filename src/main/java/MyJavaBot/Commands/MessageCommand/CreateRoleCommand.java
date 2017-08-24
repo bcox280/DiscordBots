@@ -18,9 +18,9 @@ import java.util.EnumSet;
 public class CreateRoleCommand extends TargetedCommand{
 
     public static Commands cmd = Commands.CREATEROLES;
-    public CreateRoleCommand(MessageReceivedEvent mEvent){
+    public CreateRoleCommand(){
 
-        super(mEvent);
+
 
     }
 

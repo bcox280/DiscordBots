@@ -12,9 +12,9 @@ import java.util.List;
 public class DelRoleCommand extends TargetedCommand{
 
     public static Commands cmd = Commands.DELROLE;
-    public DelRoleCommand(MessageReceivedEvent mEvent) {
+    public DelRoleCommand() {
 
-        super(mEvent);
+
 
     }
 

@@ -39,9 +39,9 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
 
                 }
             }
-            if(admin) {
+           /* if(admin) {
                 adminCommands(msg);
-            }
+            }*/
             admin = false;
 
 
@@ -65,28 +65,10 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
     }
 
     private void adminCommands(String msg) {
-        BaseCommand cmd = null;
-        if (msg.startsWith(Commands.ADDROLES.toString())) {//TODO some sort of refactoring? simple command usage, so executing every command wont require millions of lines
+        MessageCommand cmd = null;
 
-            cmd = new AddRoleCommand(_mEvent);
-
-        } else if (msg.startsWith(Commands.CREATEROLES.toString())) {
-
-            cmd = new CreateRoleCommand(_mEvent);
-
-
-        }else if (msg.startsWith(Commands.JOIN.toString())) {
-
-            cmd = new TestCommand(_mEvent);
-
-
-        }
-        else if (msg.startsWith(Commands.DELROLE.toString())) {
-
-            cmd = new DelRoleCommand(_mEvent);
-
-        }
         if (cmd != null) {
+            cmd.setUp(_mEvent);
             cmd.execute();
         }
 
@@ -94,39 +76,18 @@ public class MessageModule extends AbstractModule implements IListener<MessageRe
 
     private void userCommands(String msg) {
 
-        BaseCommand cmd = null;
-        if (msg.startsWith(Commands.LISTCOMMANDS.toString())) {
+        MessageCommand cmd = null;
+        for(Commands cmds: Commands.values()){
 
-            cmd = new CommandsCommand(_mEvent);
+            if(msg.startsWith(cmds.toString())){
 
-        } else if (msg.startsWith(Commands.DEFINE.toString())) {
+                cmd = cmds.getCommand();
+                break;
 
-            cmd = new DefineCommand(_mEvent);
-
-        }else if (msg.startsWith(Commands.ROULETTE.toString())) {
-
-                cmd = new RouletteCommand(_mEvent);
-
-        } else if (msg.startsWith(Commands.D20.toString())) {
-
-                cmd = new D20Command(_mEvent);
-
-        } else if (msg.startsWith(Commands.BAN.toString())) {
-
-                cmd = new BanCommand(_mEvent);
-
-        } else if (msg.startsWith(Commands.ROLES.toString())) {
-
-            cmd = new RoleListCommand(_mEvent);
-
-
-        }else if (msg.startsWith(Commands.FLIP.toString())) {
-
-            cmd = new CoinCommand(_mEvent);
-
-
+            }
         }
         if (cmd != null) {
+            cmd.setUp(_mEvent);
             cmd.execute();
         }
 
