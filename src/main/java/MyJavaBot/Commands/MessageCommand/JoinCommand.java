@@ -11,9 +11,9 @@ import sx.blah.discord.util.MessageBuilder;
 import static jdk.nashorn.internal.objects.NativeArray.join;
 
 
-public class TestCommand extends MessageCommand{
+public class JoinCommand extends MessageCommand{
 
-    public TestCommand() {
+    public JoinCommand() {
 
     }
 
