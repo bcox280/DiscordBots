@@ -1,0 +1,31 @@
+2017-08-25 09:23:34.992 [main] INFO  org.eclipse.jetty.util.log               : Logging initialized @1773ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-08-25 09:23:35.024 [main] INFO  sx.blah.discord.Discord4J                : Discord4J v2.8.4 (f9695fb09ff01242b02b9641d0b655311af4b558-f9695fb) (https://github.com/austinv11/Discord4J)
+2017-08-25 09:23:35.024 [main] INFO  sx.blah.discord.Discord4J                : A Java binding for the official Discord API, forked from the inactive https://github.com/nerd/Discord4J. Copyright (c) 2017, Licensed under GNU LGPLv3
+2017-08-25 09:23:37.675 [main] DEBUG sx.blah.discord.Discord4J                : Obtained gateway wss://gateway.discord.gg?encoding=json&v=5.
+2017-08-25 09:23:38.854 [HttpClient@1755815606-24] INFO  sx.blah.discord.Discord4J                : Websocket Connected.
+2017-08-25 09:23:39.737 [Dispatch Handler] INFO  sx.blah.discord.Discord4J                : Connected to Discord Gateway v5. Receiving 3 guilds.
+2017-08-25 09:23:40.020 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "Nazi Bot Army" with ID 113823704999395333 on shard 0.
+2017-08-25 09:23:40.020 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "FidgetDevServer" with ID 324809680440262667 on shard 0.
+2017-08-25 09:23:40.052 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "🅱art 2 🅱oftware" with ID 347278663936638976 on shard 0.
+2017-08-25 09:25:19.917 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J                : Message from: Captaindavyjones (113823182749696002) in channel ID 324809680440262667: !commands
+2017-08-25 09:25:20.641 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J                : Message from: SoftwareGoreBot (325216681205170177) in channel ID 333805603451437058: !roles <MentionedUser> or !roles:	Lists Roles for a Server or a User
+!add <MentionedUser> <Role>:	Adds a Mentioned User to a Role
+!createRole <Color> <RoleName> <Admin?>:	Creates a new Role
+!define <Word>:	Defines a Given Word
+!delRole <RoleName>:	Deletes a given role
+!chgPerm <User> <Perm> or !ChgPerm <Role> <Perm>:	Changes permissions for a given role or user
+!ban <User> <Reason>:	Bans a user for a reason
+!roulette <User>  or !roulette:	Russian Roulette on yourself or another user
+!d20:	Rolls a d20
+!join:	Joins the channel a user is in
+!flip:	Flips a coin
+!commands:	Lists all Commands
+2017-08-25 11:36:27.528 [main] INFO  org.eclipse.jetty.util.log               : Logging initialized @935ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-08-25 11:36:27.561 [main] INFO  sx.blah.discord.Discord4J                : Discord4J v2.8.4 (f9695fb09ff01242b02b9641d0b655311af4b558-f9695fb) (https://github.com/austinv11/Discord4J)
+2017-08-25 11:36:27.561 [main] INFO  sx.blah.discord.Discord4J                : A Java binding for the official Discord API, forked from the inactive https://github.com/nerd/Discord4J. Copyright (c) 2017, Licensed under GNU LGPLv3
+2017-08-25 11:36:29.474 [main] DEBUG sx.blah.discord.Discord4J                : Obtained gateway wss://gateway.discord.gg?encoding=json&v=5.
+2017-08-25 11:36:30.359 [HttpClient@1822650657-23] INFO  sx.blah.discord.Discord4J                : Websocket Connected.
+2017-08-25 11:36:30.725 [Dispatch Handler] INFO  sx.blah.discord.Discord4J                : Connected to Discord Gateway v5. Receiving 3 guilds.
+2017-08-25 11:36:30.850 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "Nazi Bot Army" with ID 113823704999395333 on shard 0.
+2017-08-25 11:36:30.850 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "FidgetDevServer" with ID 324809680440262667 on shard 0.
+2017-08-25 11:36:30.881 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J                : New guild has been created/joined! "🅱art 2 🅱oftware" with ID 347278663936638976 on shard 0.
